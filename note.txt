@@ -1,0 +1,17 @@
+PEMILIHAN KAHIMA
+kriteria
+  1. ipk
+  2. sk2pm
+  3. jml_organisasi_pelatian
+  4. total_ktm
+
+bobot kriteria
+  1. 25
+  2. 20
+  3. 30
+  4. 15
+
+fitur 
+  1. login admin
+  2. admin nambah data
+  3. table nampilin data
