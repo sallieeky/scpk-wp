@@ -17,44 +17,41 @@ class CakahimaSeeder extends Seeder
         Cakahima::create([
             "nama" => "Yus",
             "ipk" => 3.5,
-            "sk2pm" => 2750,
-            "jml_op" => 9,
-            "total_ktm" => 219,
+            "prestasi" => 5,
+            "nilai_karya_tulis" => 76,
+            "toefl" => 400,
         ]);
         Cakahima::create([
             "nama" => "Arif",
             "ipk" => 3.29,
-            "sk2pm" => 3500,
-            "jml_op" => 4,
-            "total_ktm" => 184,
+            "prestasi" => 2,
+            "nilai_karya_tulis" => 94,
+            "toefl" => 526,
         ]);
         Cakahima::create([
             "nama" => "Ayun",
             "ipk" => 3.69,
-            "sk2pm" => 6450,
-            "jml_op" => 4,
-            "total_ktm" => 242,
+            "prestasi" => 4,
+            "nilai_karya_tulis" => 88,
+            "toefl" => 481,
         ]);
         Cakahima::create([
             "nama" => "Zidan",
             "ipk" => 3.84,
-            "sk2pm" => 1650,
-            "jml_op" => 3,
-            "total_ktm" => 129,
+            "prestasi" => 1,
+            "nilai_karya_tulis" => 82,
+            "toefl" => 524,
         ]);
-        Cakahima::create([
-            "nama" => "Tata",
-            "ipk" => 3.43,
-            "sk2pm" => 1950,
-            "jml_op" => 10,
-            "total_ktm" => 312,
-        ]);
-        Cakahima::create([
-            "nama" => "Tes",
-            "ipk" => 4,
-            "sk2pm" => 9000,
-            "jml_op" => 15,
-            "total_ktm" => 400,
-        ]);
+
+        // random ipk prestasi nilai_karya_tulis toefl
+        for ($i = 0; $i < 100; $i++) {
+            Cakahima::create([
+                "nama" => "Mahasiswa " . $i,
+                "ipk" => rand(300, 400) / 100,
+                "prestasi" => rand(1, 10),
+                "nilai_karya_tulis" => rand(50, 100),
+                "toefl" => rand(1, 600),
+            ]);
+        }
     }
 }

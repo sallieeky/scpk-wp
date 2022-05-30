@@ -29,12 +29,12 @@ class DashboardController extends Controller
         $request->validate([
             "nama" => "required",
             "ipk" => "required|numeric",
-            "sk2pm" => "required|numeric",
-            "jml_op" => "required|numeric",
-            "total_ktm" => "required|numeric",
+            "prestasi" => "required|numeric",
+            "nilai_karya_tulis" => "required|numeric",
+            "toefl" => "required|numeric",
         ]);
         Cakahima::create($request->all());
-        return back()->with("success", "Cakahima berhasil ditambahkan");
+        return back()->with("success", "MAWAPRES berhasil ditambahkan");
     }
     public function logout()
     {
@@ -51,9 +51,9 @@ class DashboardController extends Controller
         $data = Cakahima::all();
         $bobot = [
             "ipk" => 25,
-            "sk2pm" => 15,
-            "jml_op" => 5,
-            "total_ktm" => 10,
+            "prestasi" => 20,
+            "nilai_karya_tulis" => 30,
+            "toefl" => 25,
         ];
         $sum = 0;
         foreach ($bobot as $key => $value) {

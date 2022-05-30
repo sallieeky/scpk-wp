@@ -1,15 +1,15 @@
 PEMILIHAN KAHIMA
 kriteria
   1. ipk
-  2. sk2pm
-  3. jml_organisasi_pelatian
-  4. total_ktm
+  2. prestasi
+  3. nilai_karya_tulis
+  4. toefl
 
 bobot kriteria
   1. 25
   2. 20
   3. 30
-  4. 15
+  4. 25
 
 fitur 
   1. login admin

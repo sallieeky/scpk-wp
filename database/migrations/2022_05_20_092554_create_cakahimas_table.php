@@ -17,9 +17,9 @@ class CreateCakahimasTable extends Migration
             $table->id();
             $table->string("nama");
             $table->string("ipk");
-            $table->string("sk2pm");
-            $table->string("jml_op");
-            $table->string("total_ktm");
+            $table->string("prestasi");
+            $table->string("nilai_karya_tulis");
+            $table->string("toefl");
             $table->timestamps();
         });
     }

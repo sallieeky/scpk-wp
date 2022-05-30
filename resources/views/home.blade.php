@@ -47,16 +47,16 @@
         <div class="col-md-12">
             <div class="panel">
                 <div class="panel-body">
-                    <h3><strong>Rank Calon Ketua Himpunan</strong></h3>
+                    <h3><strong>Rank Calon Mahasiswa Berprestasi (MAWAPRES)</strong></h3>
                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                         <thead>
                             <tr>
                                 <th>Rank</th>
                                 <th>Nama</th>
                                 <th>IPK</th>
-                                <th>Nilai SK2PM</th>
-                                <th>Jumlah Pelatihan dan Organisasi</th>
-                                <th>Total KTM Terkumpul</th>
+                                <th>Prestasi</th>
+                                <th>Nilai Karya Tulis</th>
+                                <th>Toefl</th>
                                 <th>Nilai Akhir (WP)</th>
                             </tr>
                         </thead>
@@ -67,9 +67,9 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $dt->nama }}</td>
                                 <td>{{ $dt->ipk }}</td>
-                                <td>{{ $dt->sk2pm }}</td>
-                                <td>{{ $dt->jml_op }}</td>
-                                <td>{{ $dt->total_ktm }}</td>
+                                <td>{{ $dt->prestasi }}</td>
+                                <td>{{ $dt->nilai_karya_tulis }}</td>
+                                <td>{{ $dt->toefl }}</td>
                                 <td>{{ $dt->result }}</td>
                             </tr>
                             
