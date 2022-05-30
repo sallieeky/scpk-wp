@@ -16,7 +16,7 @@
           {{ session("success") }}
         </div>
         @endif
-        <form action="/tambah-cakahima" method="post">
+        <form action="/tambah-mawapres" method="post">
           {{ csrf_field() }}
         <div class="col-md-12">
           <div class="col-md-12">

@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth'])->group(function () {
   Route::get('/', [DashboardController::class, "home"]);
   Route::get('/wp', [DashboardController::class, "rankWp"]);
-  Route::get('/tambah-cakahima', [DashboardController::class, "tambahCakahima"]);
-  Route::post('/tambah-cakahima', [DashboardController::class, "tambahCakahimaPost"]);
+  Route::get('/tambah-mawapres', [DashboardController::class, "tambahMawapres"]);
+  Route::post('/tambah-mawapres', [DashboardController::class, "tambahMawapresPost"]);
   Route::get("/logout", [DashboardController::class, "logout"]);
 });
 

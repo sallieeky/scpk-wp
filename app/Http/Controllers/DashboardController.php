@@ -20,11 +20,11 @@ class DashboardController extends Controller
             return back()->with("error", "Email atau password salah");
         }
     }
-    public function tambahCakahima()
+    public function tambahMawapres()
     {
-        return view("tambah-cakahima");
+        return view("tambah-mawapres");
     }
-    public function tambahCakahimaPost(Request $request)
+    public function tambahMawapresPost(Request $request)
     {
         $request->validate([
             "nama" => "required",
